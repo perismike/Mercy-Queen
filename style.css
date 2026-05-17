@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* Background layers for fade effect */
+.bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    transition: opacity 1.2s ease-in-out;
+}
+
+.bg1 {
+    opacity: 1;
+    z-index: -2;
+}
+
+.bg2 {
+    opacity: 0;
+    z-index: -3;
+}
+
+/* Dark overlay */
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.55);
+    z-index: 0;
+}
+
+/* Content */
+.content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    color: white;
+    max-width: 800px;
+    margin: auto;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 20px;
+}
+
+h1 {
+    font-size: 40px;
+    color: #ff4d6d;
+    margin-bottom: 10px;
+}
+
+/* Message box animation */
+#message {
+    font-size: 20px;
+    line-height: 1.6;
+    margin: 20px 0;
+    transition: all 0.5s ease;
+}
+
+/* Buttons */
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+button {
+    padding: 12px 18px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.bg1 {
+    background-image: url("images/alone.jpeg");
+}
+
+.bg2 {
+    background-image: url("images/smile.jpeg");
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+
+.alone { background: #6c63ff; color: white; }
+.smile { background: #ffcc00; color: black; }
+.miss { background: #ff4d6d; color: white; }
+.marvin { background: #00c2a8; color: white; }
+
+.footer {
+    margin-top: 20px;
+    font-size: 14px;
+    opacity: 0.8;
+}
